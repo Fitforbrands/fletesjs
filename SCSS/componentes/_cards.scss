@@ -1,0 +1,92 @@
+.card {
+  align-items: center;
+}
+
+.f4b-primera-fila {
+  margin-top: 125px;
+  @media (max-width: 700px) {
+    margin-top: 30px;
+  }
+}
+
+.primeraCard {
+  @media (max-width: 700px) {
+    margin-top: 130px;
+  }
+}
+
+.f4b-imagen-card {
+  height: auto;
+  width: auto;
+  max-height: 600px;
+  max-width: 100%;
+  border-radius: 10px;
+  @media (max-width: 700px) {
+    max-height: 300px;
+  }
+}
+
+.f4b-nombre {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  background-color: map-get($fletes, f4b-nombre);
+  color: #232323;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.f4b-titulo {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  background-color: wheat;
+}
+
+/* Ficha tecnica de la card */
+
+.f4b-destacado {
+  color: black;
+  background-color: yellow;
+  border-color: yellow;
+  font-size: 14px;
+}
+.f4b-dest-zonas {
+  color: whitesmoke;
+  background-color: black;
+  border-color: black;
+  font-size: 14px;
+}
+
+/* Botones de la card */
+
+.f4b-div-botones {
+  width: 290px;
+  justify-content: center;
+}
+
+.f4b-boton-perfil {
+  color: black;
+  background-color: map-get($fletes, f4b-btn-perfil);
+  border-color: map-get($fletes, f4b-btn-perfil);
+  padding-left: 50px;
+  padding-right: 50px;
+  &:hover {
+    color: black;
+    background-color: darken(map-get($fletes, f4b-btn-perfil), 20);
+    border-color: darken(map-get($fletes, f4b-btn-perfil), 20);
+  }
+}
+
+.f4b-wpp {
+  color: #fff;
+  background-color: map-get($fletes, f4b-btn-wpp);
+  border-color: map-get($fletes, f4b-btn-wpp);
+  padding-left: 50px;
+  padding-right: 50px;
+  &:hover {
+    color: white;
+    background-color: darken(map-get($fletes, f4b-btn-wpp), 10);
+    border-color: darken(map-get($fletes, f4b-btn-wpp), 10);
+  }
+}

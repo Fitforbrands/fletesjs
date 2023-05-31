@@ -1,0 +1,57 @@
+header {
+  margin-bottom: 80px;
+  @media (max-width: 700px) {
+    margin-bottom: 60px;
+  }
+}
+
+.f4b-logo {
+  height: 70px;
+}
+
+.f4b-div-nav {
+  justify-content: space-around;
+}
+
+.f4b-nav {
+  width: 80%;
+  justify-content: space-around;
+
+  li:hover {
+    font-weight: bold;
+  }
+}
+
+.f4b-nav-color {
+  background-color: map-get($fletes, f4b-bg-header);
+}
+
+.f4b-redes {
+  list-style: none;
+  display: flex;
+  width: 110px;
+  justify-content: space-between;
+
+  li {
+    margin-top: 15px;
+    align-items: center;
+  }
+  li a {
+    color: black;
+    font-size: 20px;
+  }
+}
+
+.nav-item a {
+  font-size: 20px;
+  font-family: map-get($fletes, f4b-fuente-principal);
+}
+
+.f4b-nav-estoyaca {
+  font-weight: bold;
+  border-bottom: black solid 4px;
+}
+
+.dropdown-item:active {
+  background-color: #6cc4dd;
+}

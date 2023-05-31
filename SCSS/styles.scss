@@ -1,0 +1,49 @@
+/*         Global          */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;900&display=swap");
+@import "./base/vars";
+@import "./base/maps";
+@import "./base/mixin";
+
+/*         HEADER + NAV    */
+
+@import "./componentes/header";
+
+/* SLIDER X 3 */
+
+@import "./componentes/sliderHome";
+
+/*      BANNER DE ZONA     */
+
+@import "./componentes/bannerZona";
+
+/*         CARDS          */
+
+@import "./componentes/cards";
+
+/* BANNER PUBLICA */
+
+@import "./componentes/bannerPublica";
+
+/* FOOTER */
+
+@import "./componentes/footer";
+
+/* EMPRESA */
+
+@import "./componentes/presEmpresa";
+
+/* contacto */
+
+@import "./componentes/bannerEmpresa";
+
+@import "./componentes/formContacto";

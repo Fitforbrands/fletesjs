@@ -1,0 +1,11 @@
+@mixin f4b-disp-full($tipo, $dire, $just, $Alig) {
+  display: $tipo;
+  flex-direction: $dire;
+  justify-content: $just;
+  align-items: $Alig;
+}
+
+@mixin f4b-disp-simple($tipo, $dire) {
+  display: $tipo;
+  flex-direction: $dire;
+}

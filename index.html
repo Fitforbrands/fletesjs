@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fletear</title>
+    <meta
+      name="description"
+      content="Guia de fletes de Argentina, busca los mas adecuados para tu zona"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-fletear.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <!-- Header + Nav -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top f4b-nav-color">
+        <div class="container-fluid">
+          <a href="./index.html"
+            ><img
+              src="./img/fletear-logo-min.png"
+              alt="logo fletear"
+              class="f4b-logo"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse f4b-div-nav"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav f4b-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active f4b-nav-estoyaca"
+                  aria-current="page"
+                  href="#"
+                  ><i class="bi bi-house-door-fill"></i> Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/fletesFlex.html"
+                  ><i class="bi bi-fire"></i> Mercado Libre FLEX
+                  <i class="bi bi-fire"></i
+                ></a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-geo-alt-fill"></i> Zonas
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./index.html"
+                      >Todas las zonas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./paginas/microcentro.html"
+                      >Microcentro</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./paginas/belgrano.html"
+                      >Belgrano</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./paginas/villacrespo.html"
+                      >Villa crespo</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/contacto.html"
+                  ><i class="bi bi-badge-ad-fill"></i> Publicá</a
+                >
+              </li>
+            </ul>
+
+            <ul class="f4b-redes">
+              <li>
+                <a href=""><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Sliders -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/guia-fletes-450.png"
+            class="d-block w-100"
+            alt="Guia de fletes"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>FLETES PARA TRANSPORTE Y MUDANZAS</h1>
+            <p>
+              Encontra aquí las empresas destacadas para fletes y mudanzas en
+              Argentina
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/guia-fletes-450.png"
+            class="d-block w-100"
+            alt="Guia de fletes"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>MERCADO LIBRE FLEX</h2>
+            <p>
+              Encontra aquí las empresas destacadas para fletes y mudanzas en
+              Argentina
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/guia-fletes-450.png"
+            class="d-block w-100"
+            alt="Guia de fletes"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>PUBLICA EN FLETEAR</h2>
+            <p>
+              Participa junto a las empresas destacadas para fletes y mudanzas
+              en Argentina
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--  cards destacados 1 -->
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/villa-crespo.png"
+            class="f4b-imagen-card"
+            alt="Flete de Villa Crespo"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">
+              Transportes Fletemax <i class="bi bi-suit-heart-fill"></i>
+            </h2>
+
+            <p class="card-text">
+              Empresa de transporte dedicada a ofrecer fletes eficientes, con
+              una amplia gama de servicios para todas las necesidades de
+              transporte.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  >NUEVO INGRESO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge rounded-pill f4b-dest-zonas"
+                  >VILLA CRESPO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="./paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/villa-crespo.png"
+            class="f4b-imagen-card"
+            alt="Flete de Villa Crespo"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes Fletespot</h2>
+
+            <p class="card-text">
+              Una empresa de transporte especializada en el transporte eficiente
+              de mercancías de todo tipo desde un lugar a otro.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  >NUEVO INGRESO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >VILLA CRESPO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="./paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/villa-crespo.png"
+            class="f4b-imagen-card"
+            alt="Flete de Villa Crespo"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes Fletelink</h2>
+
+            <p class="card-text">
+              Empresa de transporte con una gran red de servicios de transporte
+              para su satisfacción. Ofrecemos soluciones flexibles.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  >NUEVO INGRESO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >VILLA CRESPO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicios
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+                <span class="badge bg-primary rounded-pill">Fletes</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="./paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/villa-crespo.png"
+            class="f4b-imagen-card"
+            alt="Flete de Villa Crespo"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes Primetime</h2>
+
+            <p class="card-text">
+              Una empresa de transporte líder en el suministro de servicios de
+              fletes a diversos destinos con una amplia gama de opciones.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >VILLA CRESPO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="./paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/villa-crespo.png"
+            class="f4b-imagen-card"
+            alt="Flete de Villa Crespo"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes Moviemax</h2>
+
+            <p class="card-text">
+              Ofrecemos servicios de fletes a un precio competitivo, con un alto
+              nivel de calidad. Nuestros fletes son seguros, fiables y
+              asequibles.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >VILLA CRESPO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="./paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/villa-crespo.png"
+            class="f4b-imagen-card"
+            alt="Flete de Vila Crespo"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes Fleteplex</h2>
+
+            <p class="card-text">
+              Una empresa de transporte especializada en ofrecer soluciones de
+              transporte asequibles y fiables, Nacional e internacional.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >VILLA CRESPO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="./paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/villa-crespo.png"
+            class="f4b-imagen-card"
+            alt="Flete de Villa Crespo"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes GoFlet</h2>
+
+            <p class="card-text">
+              Empresa de transporte con una amplia selección de servicios de
+              fletes para satisfacer todas sus necesidades de transporte.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >VILLA CRESPO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="./paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./img/villa-crespo.png"
+            class="f4b-imagen-card"
+            alt="Flete de Villa Crespo"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes InFlet</h2>
+
+            <p class="card-text">
+              Ofrecemos servicios de fletes de alta calidad para todas sus
+              necesidades de transporte. Amplia gama de servicios.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >VILLA CRESPO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicios
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="./paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Banner publica -->
+
+    <div class="destaca-banner">
+      <a href="./paginas/contacto.html"
+        ><img src="./img/publica-en-fletear.png" alt="Banner fletear"
+      /></a>
+    </div>
+
+    <!--  cards destacados 2 -->
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img
+            src="../img/Flete-Microcentro.png"
+            class="f4b-imagen-card"
+            alt="Flete de Microcentro"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">
+              Fletes Fletespot <i class="bi bi-suit-heart-fill"></i>
+            </h2>
+
+            <p class="card-text">
+              Una empresa de transporte especializada en el transporte eficiente
+              de mercancías de todo tipo desde un lugar a otro.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  >NUEVO INGRESO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge rounded-pill f4b-dest-zonas"
+                  >MICROCENTRO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="../paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="../img/Flete-Microcentro.png"
+            class="f4b-imagen-card"
+            alt="Flete de Microcentro"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes Fletelink</h2>
+
+            <p class="card-text">
+              Empresa de transporte con una gran red de servicios de transporte
+              para su satisfacción. Ofrecemos soluciones flexibles
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  >NUEVO INGRESO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >MICROCENTRO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="../paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="../img/Flete-Microcentro.png"
+            class="f4b-imagen-card"
+            alt="Flete de Microcentro"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes Primetime</h2>
+
+            <p class="card-text">
+              Una empresa de transporte líder en el suministro de servicios de
+              fletes a diversos destinos con una amplia gama de opciones.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  >NUEVO INGRESO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >MICROCENTRO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicios
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+                <span class="badge bg-primary rounded-pill">Fletes</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="../paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="../img/Flete-Microcentro.png"
+            class="f4b-imagen-card"
+            alt="Flete de Microcentro"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes InFlet</h2>
+
+            <p class="card-text">
+              Ofrecemos servicios de fletes de alta calidad para todas sus
+              necesidades de transporte. Amplia gama de servicios
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >MICROCENTRO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="../paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="../img/Flete-Microcentro.png"
+            class="f4b-imagen-card"
+            alt="Flete de Microcentro"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes GoFlet</h2>
+
+            <p class="card-text">
+              Empresa de transporte con una amplia selección de servicios de
+              fletes para satisfacer todas sus necesidades de transporte.
+              Ofrecemos soluciones asequibles
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >MICROCENTRO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="../paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="../img/Flete-Microcentro.png"
+            class="f4b-imagen-card"
+            alt="Flete de Microcentro"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes Fleteplex</h2>
+
+            <p class="card-text">
+              Una empresa de transporte especializada en ofrecer soluciones de
+              transporte asequibles y fiables. Ofrecemos servicios de fletes a
+              nivel nacional e internacional.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >MICROCENTRO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="../paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="../img/Flete-Microcentro.png"
+            class="f4b-imagen-card"
+            alt="Flete de Microcentro"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes GoFlet</h2>
+
+            <p class="card-text">
+              Empresa de transporte con una amplia selección de servicios de
+              fletes para satisfacer todas sus necesidades de transporte.
+              Ofrecemos soluciones asequibles.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >MICROCENTRO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicio
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="../paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="../img/Flete-Microcentro.png"
+            class="f4b-imagen-card"
+            alt="Flete de Microcentro"
+          />
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">Fletes Fleteplex</h2>
+
+            <p class="card-text">
+              Una empresa de transporte especializada en ofrecer soluciones de
+              transporte asequibles y fiables. Ofrecemos servicios de fletes a
+              nivel nacional e internacional.
+            </p>
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Status
+                <span class="badge rounded-pill f4b-destacado"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill"
+                  >MICROCENTRO</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Servicios
+                <span class="badge bg-primary rounded-pill">Mudanzas</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a
+                class="btn f4b-active f4b-boton-perfil"
+                type="button"
+                href="../paginas/empresa.html"
+              >
+                <i class="bi bi-fire"></i>VER EMPRESA
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="./index.html"
+        ><img
+          src="./img/fletear-logo-min.png"
+          alt="logo fletear"
+          class="logo-footer"
+      /></a>
+      <p class="p-footer">Desarrollado por Fit for brands</p>
+      <ul class="redes-footer">
+        <li>
+          <a href=""
+            ><img
+              src="./img/instagram-blanco-y-negro-1024x1024.png"
+              alt="Instagram Fletear"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img src="./img/logo-facebook-noir.png" alt="Facebook Fletear"
+          /></a>
+        </li>
+        <li>
+          <a href=""><img src="./img/logo-emails.png" alt="email Fletear" /></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
