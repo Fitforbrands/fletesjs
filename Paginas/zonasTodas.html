@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Microcentro</title>
+    <title>Todas las zonas</title>
     <meta
       name="description"
       content="Guia de fletes de Capital Federal, busca los mas adecuados para tu zona"
@@ -74,11 +74,31 @@
                   ><i class="bi bi-house-door-fill"></i> Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./fletesFlex.html"
-                  ><i class="bi bi-fire"></i> Mercado Libre FLEX
-                  <i class="bi bi-fire"></i
-                ></a>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-geo-alt-fill"></i> Calificacion
+                </a>
+                <ul class="dropdown-menu" id="f4bcalificacion">
+                  <li>
+                    <a class="dropdown-item">Ver Todas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Nuevo Ingreso</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Plata</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Oro</a>
+                  </li>
+                </ul>
               </li>
 
               <li class="nav-item dropdown">
@@ -91,27 +111,50 @@
                 >
                   <i class="bi bi-geo-alt-fill"></i> Zonas
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" id="f4bzona">
                   <li>
-                    <a class="dropdown-item" href="../index.html"
-                      >Todas las zonas</a
-                    >
+                    <a class="dropdown-item">Todas las zonas</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./microcentro.html"
-                      >Microcentro</a
-                    >
+                    <a class="dropdown-item">Microcentro</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./belgrano.html">Belgrano</a>
+                    <a class="dropdown-item">Belgrano</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./villacrespo.html"
-                      >Villa crespo</a
-                    >
+                    <a class="dropdown-item">Villa crespo</a>
                   </li>
                 </ul>
               </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-geo-alt-fill"></i> Servicios
+                </a>
+                <ul class="dropdown-menu" id="f4bservicio">
+                  <li>
+                    <a class="dropdown-item">Ver Todos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Mudanzas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Fletes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Miniflete</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">ML Flex</a>
+                  </li>
+                </ul>
+              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="./contacto.html"
                   ><i class="bi bi-badge-ad-fill"></i> Publicá</a
@@ -138,7 +181,7 @@
     <!-- Banner de zona -->
     <main>
       <div class="zona-bannerV2">
-        <h1>MICROCENTRO</h1>
+        <h1>Todas las zonas</h1>
       </div>
 
       <!--  cards Listado por zona 1  -->
@@ -362,233 +405,17 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes Moviemax</h2>
-
-              <p class="card-text">
-                Ofrecemos servicios de fletes a un precio competitivo, con un
-                alto nivel de calidad. Nuestros fletes son seguros, fiables y
-                asequibles.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes Fleteplex</h2>
-
-              <p class="card-text">
-                Una empresa de transporte especializada en ofrecer soluciones de
-                transporte asequibles y fiables. Ofrecemos servicios de fletes
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes GoFlet</h2>
-
-              <p class="card-text">
-                Empresa de transporte con una amplia selección de servicios de
-                fletes para satisfacer todas sus necesidades de transporte.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes InFlet</h2>
-
-              <p class="card-text">
-                Ofrecemos servicios de fletes de alta calidad para todas sus
-                necesidades de transporte. Amplia gama de servicios
-              </p>
-
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicios
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
+      <!-- Empresas filtradas -->
+
+      <h1 class="F4b-Titulo">Empresas encontradas</h1>
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="F4bResultados">
+        <!-- <div class="F4b-filtrado" id="F4bResultados"></div> -->
+      </div>
       <!-- Publica en fletear -->
 
-      <div class="destaca-banner">
+      <!-- <div class="destaca-banner">
         <a href="../paginas/contacto.html"
           ><img src="../img/publica-en-fletear.png" alt="Publica en Fletear"
         /></a>
@@ -597,912 +424,9 @@
         <a href="../paginas/contacto.html"
           ><img src="../img/Publica-mobile.png" alt="Publica en Fletear"
         /></a>
-      </div>
+      </div> -->
 
       <!--  cards Listado por zona 2  -->
-
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">
-                Fletes Fletespot <i class="bi bi-suit-heart-fill"></i>
-              </h2>
-
-              <p class="card-text">
-                Una empresa de transporte especializada en el transporte
-                eficiente de mercancías de todo tipo desde un lugar a otro.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    >NUEVO INGRESO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge rounded-pill f4b-dest-zonas"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes Fletelink</h2>
-
-              <p class="card-text">
-                Empresa de transporte con una gran red de servicios de
-                transporte para su satisfacción. Ofrecemos soluciones flexibles
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    >NUEVO INGRESO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes Primetime</h2>
-
-              <p class="card-text">
-                Una empresa de transporte líder en el suministro de servicios de
-                fletes a diversos destinos con una amplia gama de opciones.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    >NUEVO INGRESO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicios
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                  <span class="badge bg-primary rounded-pill">Fletes</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes InFlet</h2>
-
-              <p class="card-text">
-                Ofrecemos servicios de fletes de alta calidad para todas sus
-                necesidades de transporte. Amplia gama de servicios
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes GoFlet</h2>
-
-              <p class="card-text">
-                Empresa de transporte con una amplia selección de servicios de
-                fletes para satisfacer todas sus necesidades de transporte.
-                Ofrecemos soluciones asequibles
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes Fleteplex</h2>
-
-              <p class="card-text">
-                Una empresa de transporte especializada en ofrecer soluciones de
-                transporte asequibles y fiables. Ofrecemos servicios de fletes a
-                nivel nacional e internacional.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes GoFlet</h2>
-
-              <p class="card-text">
-                Empresa de transporte con una amplia selección de servicios de
-                fletes para satisfacer todas sus necesidades de transporte.
-                Ofrecemos soluciones asequibles.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes Fleteplex</h2>
-
-              <p class="card-text">
-                Una empresa de transporte especializada en ofrecer soluciones de
-                transporte asequibles y fiables. Ofrecemos servicios de fletes a
-                nivel nacional e internacional.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicios
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Publica en fletear -->
-
-      <div class="destaca-banner">
-        <a href="../paginas/contacto.html"
-          ><img src="../img/publica-en-fletear.png" alt="Publica en Fletear"
-        /></a>
-      </div>
-      <div class="destaca-banner-min">
-        <a href="../paginas/contacto.html"
-          ><img src="../img/Publica-mobile.png" alt="Publica en Fletear"
-        /></a>
-      </div>
-
-      <!--  cards Listado por zona 3  -->
-
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">
-                Fletes Fletespot <i class="bi bi-suit-heart-fill"></i>
-              </h2>
-
-              <p class="card-text">
-                Una empresa de transporte especializada en el transporte
-                eficiente de mercancías de todo tipo desde un lugar a otro.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    >NUEVO INGRESO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge rounded-pill f4b-dest-zonas"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes Fletelink</h2>
-
-              <p class="card-text">
-                Empresa de transporte con una gran red de servicios de
-                transporte para su satisfacción. Ofrecemos soluciones flexibles
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    >NUEVO INGRESO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes Primetime</h2>
-
-              <p class="card-text">
-                Una empresa de transporte líder en el suministro de servicios de
-                fletes a diversos destinos con una amplia gama de opciones.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    >NUEVO INGRESO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicios
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                  <span class="badge bg-primary rounded-pill">Fletes</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes InFlet</h2>
-
-              <p class="card-text">
-                Ofrecemos servicios de fletes de alta calidad para todas sus
-                necesidades de transporte. Amplia gama de servicios
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes GoFlet</h2>
-
-              <p class="card-text">
-                Empresa de transporte con una amplia selección de servicios de
-                fletes para satisfacer todas sus necesidades de transporte.
-                Ofrecemos soluciones asequibles
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes Fleteplex</h2>
-
-              <p class="card-text">
-                Una empresa de transporte especializada en ofrecer soluciones de
-                transporte asequibles y fiables. Ofrecemos servicios de fletes a
-                nivel nacional e internacional.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes GoFlet</h2>
-
-              <p class="card-text">
-                Empresa de transporte con una amplia selección de servicios de
-                fletes para satisfacer todas sus necesidades de transporte.
-                Ofrecemos soluciones asequibles.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicio
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="../img/Flete-Microcentro.png"
-              class="f4b-imagen-card"
-              alt="Flete de Microcentro"
-            />
-            <div class="card-body">
-              <h2 class="card-title f4b-nombre">Fletes Fleteplex</h2>
-
-              <p class="card-text">
-                Una empresa de transporte especializada en ofrecer soluciones de
-                transporte asequibles y fiables. Ofrecemos servicios de fletes a
-                nivel nacional e internacional.
-              </p>
-              <ul class="list-group">
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Status
-                  <span class="badge rounded-pill f4b-destacado"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Zona
-                  <span class="badge f4b-dest-zonas rounded-pill"
-                    >MICROCENTRO</span
-                  >
-                </li>
-                <li
-                  class="list-group-item d-flex justify-content-between align-items-center"
-                >
-                  Servicios
-                  <span class="badge bg-primary rounded-pill">Mudanzas</span>
-                </li>
-              </ul>
-              <div class="d-grid gap-2">
-                <a
-                  class="btn f4b-active f4b-boton-perfil"
-                  type="button"
-                  href="../paginas/empresa.html"
-                >
-                  <i class="bi bi-fire"></i>VER EMPRESA
-                </a>
-                <a class="btn f4b-active f4b-wpp" type="button">
-                  <i class="bi bi-whatsapp"></i> WHATSAPP
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
     <!--  Footer  -->
 
@@ -1540,5 +464,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="../JS/db.js"></script>
+    <script src="../JS/app.js"></script>
   </body>
 </html>

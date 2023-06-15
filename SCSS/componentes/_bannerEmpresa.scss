@@ -1,0 +1,61 @@
+.sectionEmpresa {
+  @include f4b-disp-simple(flex, row);
+  margin: 100px 20px 0px 20px;
+  @media (max-width: 800px) {
+    @include f4b-disp-simple(flex, column);
+  }
+  img {
+    @media (max-width: 800px) {
+      margin: 0px 0px 50px 0px;
+    }
+  }
+  p {
+    margin: 0px 100px 0px 100px;
+    @media (max-width: 800px) {
+      margin: 0px 20px 0px 20px;
+    }
+  }
+  ul {
+    @include f4b-disp-full(flex, column, center, center);
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    animation: lightSpeedInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+}
+
+.sectionEmpresaFlex {
+  @include f4b-disp-simple(flex, row);
+  margin: 0px 30px 0px 30px;
+  @media (max-width: 800px) {
+    @include f4b-disp-simple(flex, column);
+  }
+  img {
+    @media (max-width: 800px) {
+      margin: 100px 0px 50px 0px;
+    }
+  }
+  p {
+    margin: 0px 100px 0px 100px;
+    @media (max-width: 800px) {
+      margin: 0px 20px 0px 20px;
+    }
+  }
+  ul {
+    @include f4b-disp-full(flex, column, center, center);
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    animation: lightSpeedInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+}
