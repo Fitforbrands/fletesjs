@@ -3,12 +3,17 @@ const resultados = document.querySelector("#F4bResultados");
 const zona = document.querySelector("#f4bzona");
 const servicio = document.querySelector("#f4bservicio");
 const calificacion = document.querySelector("#f4bcalificacion");
+const favoritos = document.querySelector("#f4bfavoritos");
+const titulo = document.querySelector("#f4btitulo");
+
+let resultadoSuma = 0;
 
 const datosBusqueda = {
   nombre: "",
   imagen: "",
   descripcion: "",
   calificacion: "",
+  favorito: "",
   zona: "",
   servicio: "",
 };
@@ -21,8 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 zona.addEventListener("click", (e) => {
   datosBusqueda.zona = e.target.textContent;
+  titulo.innerHTML = e.target.textContent.toUpperCase();
   if (datosBusqueda.zona != "Todas las zonas") {
-    filtrarEmpresas();
+    filtrarEmpresasZona();
   } else {
     borraFiltroZona();
   }
@@ -30,8 +36,9 @@ zona.addEventListener("click", (e) => {
 
 servicio.addEventListener("click", (e) => {
   datosBusqueda.servicio = e.target.textContent;
+  titulo.innerHTML = e.target.textContent.toUpperCase();
   if (datosBusqueda.servicio != "Ver Todos") {
-    filtrarEmpresas();
+    filtrarEmpresasServ();
   } else {
     borraFiltroServicio();
   }
@@ -39,25 +46,75 @@ servicio.addEventListener("click", (e) => {
 
 calificacion.addEventListener("click", (e) => {
   datosBusqueda.calificacion = e.target.textContent;
+  titulo.innerHTML = e.target.textContent.toUpperCase();
   if (datosBusqueda.calificacion != "Ver Todas") {
-    filtrarEmpresas();
+    filtrarEmpresasCal();
   } else {
     borraFiltroCalificacion();
   }
 });
 
+favoritos.addEventListener("click", (e) => {
+  datosBusqueda.favorito = "f4b-boton-perfil-fav";
+  titulo.innerHTML = "TUS 🤍🤍🤍";
+  if (datosBusqueda.favorito != "Ver Todos") {
+    console.log("filtrafavoritos");
+    filtrarEmpresasFav();
+  } else {
+    borraFiltroFavorito();
+  }
+});
+
+resultados.addEventListener("click", (e) => {
+  if (e.target && e.target.tagName === "A") {
+    console.log(e.target.id);
+    if (empresas[e.target.id].favorito === "no") {
+      empresas[e.target.id].favorito = "f4b-boton-perfil-fav";
+      e.target.classList.add("f4b-boton-perfil-fav");
+      cuentaFavoritos();
+    } else {
+      empresas[e.target.id].favorito = "no";
+      e.target.classList.remove("f4b-boton-perfil-fav");
+      cuentaFavoritos();
+    }
+  }
+});
 // FILTROS GENERALES
 
-function filtrarEmpresas() {
-  const resultadoZona = empresas
-    .filter(filtraZona)
-    .filter(filtraServicio)
-    .filter(filtraCalificacion);
-  console.log(`${resultadoZona.length} empresas encontradas con los criterios: 
-  Zona: ${datosBusqueda.zona}
-  Servicio: ${datosBusqueda.servicio}
-  Calificacion: ${datosBusqueda.calificacion}
-  `);
+// function filtrarEmpresas() {
+//   const resultadoZona = empresas
+//     .filter(filtraZona)
+//     .filter(filtraServicio)
+//     .filter(filtraCalificacion);
+//   console.log(`${resultadoZona.length} empresas encontradas con los criterios:
+//   Zona: ${datosBusqueda.zona}
+//   Servicio: ${datosBusqueda.servicio}
+//   Calificacion: ${datosBusqueda.calificacion}
+//   `);
+//   mostrarEmpresas(resultadoZona);
+// }
+
+function filtrarEmpresasFav() {
+  const resultadoZona = empresas.filter(filtrafavoritos);
+
+  mostrarEmpresas(resultadoZona);
+}
+
+function filtrarEmpresasZona() {
+  const resultadoZona = empresas.filter(filtraZona);
+
+  mostrarEmpresas(resultadoZona);
+}
+
+function filtrarEmpresasServ() {
+  const resultadoZona = empresas.filter(filtraServicio);
+
+  mostrarEmpresas(resultadoZona);
+}
+
+function filtrarEmpresasCal() {
+  const resultadoZona = empresas.filter(filtraCalificacion);
+
   mostrarEmpresas(resultadoZona);
 }
 
@@ -87,21 +144,40 @@ function filtraCalificacion(empresa) {
   }
 }
 
+function filtrafavoritos(empresa) {
+  if (datosBusqueda.favorito) {
+    return empresa.favorito === datosBusqueda.favorito;
+  } else {
+    return empresa;
+  }
+}
+
+function cuentaFavoritos() {
+  for (i = 0; i < empresas.length; i++) {
+    if (empresas[i].favorito === "f4b-boton-perfil-fav") {
+      resultadoSuma = resultadoSuma + 1;
+    }
+  }
+  console.log(resultadoSuma);
+  favoritos.innerHTML = `${resultadoSuma} 🖤`;
+  resultadoSuma = 0;
+}
+
 // BORRADO GENERALES
 
 function borraFiltroZona() {
   datosBusqueda.zona = "";
-  filtrarEmpresas();
+  filtrarEmpresasZona();
 }
 
 function borraFiltroServicio() {
   datosBusqueda.servicio = "";
-  filtrarEmpresas();
+  filtrarEmpresasServ();
 }
 
 function borraFiltroCalificacion() {
   datosBusqueda.calificacion = "";
-  filtrarEmpresas();
+  filtrarEmpresasCal();
 }
 
 // presentacion de resultados
@@ -110,8 +186,16 @@ function mostrarEmpresas(empresas) {
   limpiarHTML();
 
   empresas.forEach((empresa) => {
-    const { nombre, zona, servicio, calificacion, descripcion, imagen } =
-      empresa;
+    const {
+      id,
+      nombre,
+      zona,
+      servicio,
+      favorito,
+      calificacion,
+      descripcion,
+      imagen,
+    } = empresa;
     const empresaHTML = ` <div class="col">
     <div class="card">
       <img
@@ -150,11 +234,11 @@ function mostrarEmpresas(empresas) {
         </ul>
         <div class="d-grid gap-2">
           <a
-            class="btn f4b-active f4b-boton-perfil"
+            class="btn f4b-active f4b-boton-perfil" id="${id}"
             type="button"
-            href="../paginas/empresa.html"
+            
           >
-            <i class="bi bi-fire"></i>VER EMPRESA
+          MIS <i class="bi bi-suit-heart-fill ${favorito} f4b-nuevo-titulo-like"  ></i>
           </a>
           <a class="btn f4b-active f4b-wpp" type="button">
             <i class="bi bi-whatsapp"></i> WHATSAPP

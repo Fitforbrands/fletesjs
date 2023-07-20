@@ -225,6 +225,11 @@ header {
   border-color: #2b99b8;
 }
 
+.f4b-boton-perfil-fav {
+  background-color: pink;
+  color: black;
+}
+
 .f4b-wpp {
   color: #fff;
   background-color: #25d366;
