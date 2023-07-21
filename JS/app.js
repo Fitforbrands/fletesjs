@@ -115,7 +115,11 @@ resultados.addEventListener("click", (e) => {
 
 function cargaFavoritos() {
   let favo = JSON.parse(localStorage.getItem("favoritos"));
-  empresas = favo;
+  if (favo != null) {
+    empresas = favo;
+  } else {
+    console.log("no hay favoritos aun");
+  }
 }
 
 function guardaFavoritos() {
