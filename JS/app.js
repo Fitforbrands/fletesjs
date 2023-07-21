@@ -112,7 +112,7 @@ resultados.addEventListener("click", (e) => {
 
 function VerificaDB() {
   let favo = JSON.parse(localStorage.getItem("favoritos"));
-  if (empresas.length === favo.length) {
+  if (empresas.length == favo.length) {
     console.log("sin modificaciones de DB");
   } else {
     console.log("Local storage no coincide con DB");
