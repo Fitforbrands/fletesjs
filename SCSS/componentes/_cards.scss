@@ -51,6 +51,10 @@
   background-color: wheat;
 }
 
+.F4b-cards {
+  height: 100px;
+}
+
 /* Ficha tecnica de la card */
 
 .f4b-destacado {
@@ -81,14 +85,14 @@
   padding-right: 50px;
   &:hover {
     color: black;
-    background-color: darken(map-get($fletes, f4b-btn-perfil), 20);
-    border-color: darken(map-get($fletes, f4b-btn-perfil), 20);
+    background-color: darken(map-get($fletes, f4b-btn-fav), 20);
+    border-color: darken(map-get($fletes, f4b-btn-fav), 20);
   }
 }
 
 .f4b-boton-perfil-fav {
-  background-color: pink;
-  color: black;
+  background-color: map-get($fletes, f4b-btn-fav);
+  border-color: map-get($fletes, f4b-btn-fav);
 }
 
 .f4b-wpp {

@@ -73,6 +73,12 @@ header {
   background-color: #6cc4dd;
 }
 
+.f4b-favmenu {
+  background-color: palevioletred;
+  border-radius: 15px;
+  color: black;
+}
+
 /* SLIDER X 3 */
 /* //////////// */
 /* SLIDER X 3 */
@@ -191,6 +197,10 @@ header {
   background-color: wheat;
 }
 
+.F4b-cards {
+  height: 100px;
+}
+
 /* Ficha tecnica de la card */
 .f4b-destacado {
   color: black;
@@ -221,13 +231,13 @@ header {
 }
 .f4b-boton-perfil:hover {
   color: black;
-  background-color: #2b99b8;
-  border-color: #2b99b8;
+  background-color: #b72e5b;
+  border-color: #b72e5b;
 }
 
 .f4b-boton-perfil-fav {
-  background-color: pink;
-  color: black;
+  background-color: palevioletred;
+  border-color: palevioletred;
 }
 
 .f4b-wpp {

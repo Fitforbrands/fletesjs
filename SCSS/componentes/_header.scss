@@ -59,3 +59,9 @@ header {
 .dropdown-item:active {
   background-color: #6cc4dd;
 }
+
+.f4b-favmenu {
+  background-color: map-get($fletes, f4b-btn-fav);
+  border-radius: 15px;
+  color: black;
+}

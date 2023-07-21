@@ -37,6 +37,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script defer src="../JS/db.js"></script>
+    <script defer src="../JS/app.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
   </head>
   <body>
     <!-- HEADER + NAV -->
@@ -156,7 +168,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" id="f4bfavoritos"
+                <a class="nav-link f4b-favmenu" id="f4bfavoritos"
                   ><i class="bi bi-suit-heart-fill"></i> Favoritos</a
                 >
               </li>
@@ -186,22 +198,8 @@
 
       <!-- Empresas filtradas -->
 
-      <h1 class="F4b-Titulo">Empresas encontradas</h1>
-      <div class="row row-cols-1 row-cols-md-4 g-4" id="F4bResultados">
-        <!-- <div class="F4b-filtrado" id="F4bResultados"></div> -->
-      </div>
-      <!-- Publica en fletear -->
-
-      <!-- <div class="destaca-banner">
-        <a href="../paginas/contacto.html"
-          ><img src="../img/publica-en-fletear.png" alt="Publica en Fletear"
-        /></a>
-      </div>
-      <div class="destaca-banner-min">
-        <a href="../paginas/contacto.html"
-          ><img src="../img/Publica-mobile.png" alt="Publica en Fletear"
-        /></a>
-      </div> -->
+      <div class="F4b-cards"></div>
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="F4bResultados"></div>
 
       <!--  cards Listado por zona 2  -->
     </main>
@@ -241,7 +239,5 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="../JS/db.js"></script>
-    <script src="../JS/app.js"></script>
   </body>
 </html>

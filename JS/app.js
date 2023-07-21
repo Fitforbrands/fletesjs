@@ -1,14 +1,15 @@
-const listadoEmpresas = empresas;
-const resultados = document.querySelector("#F4bResultados");
-const zona = document.querySelector("#f4bzona");
-const servicio = document.querySelector("#f4bservicio");
-const calificacion = document.querySelector("#f4bcalificacion");
-const favoritos = document.querySelector("#f4bfavoritos");
-const titulo = document.querySelector("#f4btitulo");
+const resultados = document.querySelector("#F4bResultados"); // se utiloiza para los botones de agregar a favoritos
+const zona = document.querySelector("#f4bzona"); // menu Zona del header
+const servicio = document.querySelector("#f4bservicio"); // menu servicio del header
+const calificacion = document.querySelector("#f4bcalificacion"); // menu calificacion del header
+const favoritos = document.querySelector("#f4bfavoritos"); // boton favoritos del header
+const titulo = document.querySelector("#f4btitulo"); // cambia el h1 de cada busqueda.
 
 let resultadoSuma = 0;
 
+// Se creo este objeto auxiliar para crear el listado de busquedas
 const datosBusqueda = {
+  id: "",
   nombre: "",
   imagen: "",
   descripcion: "",
@@ -21,6 +22,8 @@ const datosBusqueda = {
 // listeners generales
 
 document.addEventListener("DOMContentLoaded", () => {
+  cargaFavoritos();
+  cuentaFavoritos();
   mostrarEmpresas(empresas);
 });
 
@@ -65,21 +68,61 @@ favoritos.addEventListener("click", (e) => {
   }
 });
 
+// Agrega y saca de favoritos
+
 resultados.addEventListener("click", (e) => {
   if (e.target && e.target.tagName === "A") {
     console.log(e.target.id);
     if (empresas[e.target.id].favorito === "no") {
       empresas[e.target.id].favorito = "f4b-boton-perfil-fav";
       e.target.classList.add("f4b-boton-perfil-fav");
+      guardaFavoritos();
+      Toastify({
+        text: "Agregado a favoritos",
+        gravity: "bottom",
+        position: "center",
+        duration: 2000,
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        offset: {
+          y: 300,
+        },
+      }).showToast();
       cuentaFavoritos();
     } else {
       empresas[e.target.id].favorito = "no";
       e.target.classList.remove("f4b-boton-perfil-fav");
+      guardaFavoritos();
+      Toastify({
+        text: "Retirado de favoritos",
+        gravity: "bottom",
+        position: "center",
+        duration: 2000,
+        style: {
+          background: "linear-gradient(to right, palevioletred, red)",
+        },
+        offset: {
+          y: 300,
+        },
+      }).showToast();
       cuentaFavoritos();
     }
   }
 });
-// FILTROS GENERALES
+
+// Actualiza favoritos desde LocalStorage
+
+function cargaFavoritos() {
+  let favo = JSON.parse(localStorage.getItem("favoritos"));
+  empresas = favo;
+}
+
+function guardaFavoritos() {
+  localStorage.setItem("favoritos", JSON.stringify(empresas));
+}
+
+// FILTROS GENERALES OPCION FILTROS SUMADOS
 
 // function filtrarEmpresas() {
 //   const resultadoZona = empresas
@@ -93,6 +136,8 @@ resultados.addEventListener("click", (e) => {
 //   `);
 //   mostrarEmpresas(resultadoZona);
 // }
+
+// Funciones para filtros
 
 function filtrarEmpresasFav() {
   const resultadoZona = empresas.filter(filtrafavoritos);
@@ -180,7 +225,15 @@ function borraFiltroCalificacion() {
   filtrarEmpresasCal();
 }
 
-// presentacion de resultados
+// Limpiar html
+
+function limpiarHTML() {
+  while (resultados.firstChild) {
+    resultados.removeChild(resultados.firstChild);
+  }
+}
+
+// presentacion de resultados y generacion de HTML de cada card
 
 function mostrarEmpresas(empresas) {
   limpiarHTML();
@@ -196,85 +249,41 @@ function mostrarEmpresas(empresas) {
       descripcion,
       imagen,
     } = empresa;
-    const empresaHTML = ` <div class="col">
-    <div class="card">
-      <img
-        src="${imagen}"
-        class="f4b-imagen-card"
-        alt="Flete de Microcentro"
-      />
-      <div class="card-body">
-        <h2 class="card-title f4b-nombre">${nombre}</h2>
-
-        <p class="card-text">
-          ${descripcion}
-        </p>
-        <ul class="list-group">
-          <li
-            class="list-group-item d-flex justify-content-between align-items-center"
-          >
-            Status
-            <span class="badge rounded-pill f4b-destacado"
-              >${calificacion}</span>
-          </li>
-          <li
-            class="list-group-item d-flex justify-content-between align-items-center"
-          >
-            Zona
-            <span class="badge f4b-dest-zonas rounded-pill"
-              >${zona}</span
-            >
-          </li>
-          <li
-            class="list-group-item d-flex justify-content-between align-items-center"
-          >
-            Servicio
-            <span class="badge bg-primary rounded-pill">${servicio}</span>
-          </li>
-        </ul>
-        <div class="d-grid gap-2">
-          <a
-            class="btn f4b-active f4b-boton-perfil" id="${id}"
-            type="button"
-            
-          >
-          MIS <i class="bi bi-suit-heart-fill ${favorito} f4b-nuevo-titulo-like"  ></i>
-          </a>
-          <a class="btn f4b-active f4b-wpp" type="button">
-            <i class="bi bi-whatsapp"></i> WHATSAPP
-          </a>
+    const empresaHTML = ` 
+      <div class="col">
+        <div class="card">
+          <img src="${imagen}" class="f4b-imagen-card" alt="Flete de ${zona}"/>
+          <div class="card-body">
+            <h2 class="card-title f4b-nombre">${nombre}</h2>
+            <p class="card-text">${descripcion}</p>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Status
+                <span class="badge rounded-pill f4b-destacado">${calificacion}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Zona
+                <span class="badge f4b-dest-zonas rounded-pill">${zona}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Servicio
+                <span class="badge bg-primary rounded-pill">${servicio}</span>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <a class="btn f4b-active f4b-boton-perfil ${favorito}" id="${id}" type="button">
+                MIS 
+                <i class="bi bi-suit-heart-fill f4b-nuevo-titulo-like"></i>
+              </a>
+              <a class="btn f4b-active f4b-wpp" type="button">
+                <i class="bi bi-whatsapp"></i> 
+                WHATSAPP
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-    `;
+      </div>`;
 
     resultados.innerHTML += empresaHTML;
   });
 }
-
-// Limpiar html
-
-function limpiarHTML() {
-  while (resultados.firstChild) {
-    resultados.removeChild(resultados.firstChild);
-  }
-}
-
-// backup presentacion
-
-// function mostrarEmpresas(empresas) {
-//     limpiarHTML();
-
-//     empresas.forEach((empresa) => {
-//       const { nombre, zona, servicio, calificacion } = empresa;
-//       const empresaHTML = document.createElement("p");
-
-//       empresaHTML.textContent = `
-//       ${nombre}   -   ${zona}    -    ${servicio}   -    ${calificacion}
-
-//       `;
-
-//       resultados.appendChild(empresaHTML);
-//     });
-//   }
