@@ -9,10 +9,6 @@ let resultadoSuma = 0;
 
 // Se creo este objeto auxiliar para crear el listado de busquedas
 const datosBusqueda = {
-  id: "",
-  nombre: "",
-  imagen: "",
-  descripcion: "",
   calificacion: "",
   favorito: "",
   zona: "",
@@ -22,6 +18,7 @@ const datosBusqueda = {
 // listeners generales
 
 document.addEventListener("DOMContentLoaded", () => {
+  VerificaDB();
   cargaFavoritos();
   cuentaFavoritos();
   mostrarEmpresas(empresas);
@@ -112,6 +109,16 @@ resultados.addEventListener("click", (e) => {
 });
 
 // Actualiza favoritos desde LocalStorage
+
+function VerificaDB() {
+  let favo = JSON.parse(localStorage.getItem("favoritos"));
+  if (empresas.length === favo.length) {
+    console.log("sin modificaciones de DB");
+  } else {
+    console.log("Local storage no coincide con DB");
+    localStorage.setItem("favoritos", JSON.stringify(empresas));
+  }
+}
 
 function cargaFavoritos() {
   let favo = JSON.parse(localStorage.getItem("favoritos"));
