@@ -4,8 +4,24 @@ const servicio = document.querySelector("#f4bservicio"); // menu servicio del he
 const calificacion = document.querySelector("#f4bcalificacion"); // menu calificacion del header
 const favoritos = document.querySelector("#f4bfavoritos"); // boton favoritos del header
 const titulo = document.querySelector("#f4btitulo"); // cambia el h1 de cada busqueda.
-
+// const URL = "../JS/empresas.json"; // carga local de empresas con archivo JSON
+const URL = "https://64c25b22eb7fd5d6ebcfb1de.mockapi.io/api/v1/empresas"; // carga local de empresas via API
+let empresas = [];
 let resultadoSuma = 0;
+
+// cargo empresas
+
+function cargardatos() {
+  fetch(URL)
+    .then((response) => response.json())
+    .then((data) => empresas.push(...data))
+    .then(() => console.table(empresas))
+    .then(() => VerificaDB())
+    .then(() => cargaFavoritos())
+    .then(() => cuentaFavoritos())
+    .then(() => mostrarEmpresas(empresas))
+    .catch((error) => console.error("Se ha producido un error:", error));
+}
 
 // Se creo este objeto auxiliar para crear el listado de busquedas
 const datosBusqueda = {
@@ -18,10 +34,7 @@ const datosBusqueda = {
 // listeners generales
 
 document.addEventListener("DOMContentLoaded", () => {
-  VerificaDB();
-  cargaFavoritos();
-  cuentaFavoritos();
-  mostrarEmpresas(empresas);
+  cargardatos();
 });
 
 zona.addEventListener("click", (e) => {
