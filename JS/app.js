@@ -20,7 +20,8 @@ function cargardatos() {
     .then(() => cargaFavoritos())
     .then(() => cuentaFavoritos())
     .then(() => mostrarEmpresas(empresas))
-    .catch((error) => console.error("Se ha producido un error:", error));
+    // .catch((error) => console.error("Se ha producido un error:", error));
+    .catch((error) => presentaerror(error));
 }
 
 // Se creo este objeto auxiliar para crear el listado de busquedas
@@ -148,6 +149,18 @@ function cargaFavoritos() {
 
 function guardaFavoritos() {
   localStorage.setItem("favoritos", JSON.stringify(empresas));
+}
+
+function presentaerror() {
+  Toastify({
+    text: "Ah ocurrido un error, vuelve a intentarlo mas tarde",
+    gravity: "bottom",
+    position: "center",
+    duration: 2000,
+    style: {
+      background: "linear-gradient(to right, palevioletred, red)",
+    },
+  }).showToast();
 }
 
 // FILTROS GENERALES OPCION FILTROS SUMADOS
