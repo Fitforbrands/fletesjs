@@ -7,6 +7,7 @@ const titulo = document.querySelector("#f4btitulo"); // cambia el h1 de cada bus
 // const URL = "../JS/empresas.json"; // carga local de empresas con archivo JSON
 const URL = "https://64c25b22eb7fd5d6ebcfb1de.mockapi.io/api/v1/empresas"; // carga local de empresas via API
 const URLserver = "http://localhost:8081/fletes";
+const URLmiserver = "http://localhost:8081/fletes"; // carga local de empresas via API
 let empresas = [];
 let resultadoSuma = 0;
 
