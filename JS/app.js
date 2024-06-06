@@ -6,13 +6,14 @@ const favoritos = document.querySelector("#f4bfavoritos"); // boton favoritos de
 const titulo = document.querySelector("#f4btitulo"); // cambia el h1 de cada busqueda.
 // const URL = "../JS/empresas.json"; // carga local de empresas con archivo JSON
 const URL = "https://64c25b22eb7fd5d6ebcfb1de.mockapi.io/api/v1/empresas"; // carga local de empresas via API
+const URLserver = "http://localhost:8081/fletes";
 let empresas = [];
 let resultadoSuma = 0;
 
 // cargo empresas
 
 function cargardatos() {
-  fetch(URL)
+  fetch(URLserver)
     .then((response) => response.json())
     .then((data) => empresas.push(...data))
     .then(() => console.table(empresas))
