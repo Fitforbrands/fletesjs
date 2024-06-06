@@ -13,7 +13,7 @@ let resultadoSuma = 0;
 // cargo empresas
 
 function cargardatos() {
-  fetch(URLmiserver)
+  fetch(URL)
     .then((response) => response.json())
     .then((data) => empresas.push(...data))
     .then(() => console.table(empresas))
