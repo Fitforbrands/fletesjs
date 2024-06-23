@@ -6,7 +6,7 @@ const favoritos = document.querySelector("#f4bfavoritos"); // boton favoritos de
 const titulo = document.querySelector("#f4btitulo"); // cambia el h1 de cada busqueda.
 // const URL = "../JS/empresas.json"; // carga local de empresas con archivo JSON
 const URL = "https://64c25b22eb7fd5d6ebcfb1de.mockapi.io/api/v1/empresas"; // carga local de empresas via API
-const URLmiserver = "https://fletes-server.up.railway.app/fletes"; // carga local de empresas via API
+const URLmiserver = "https://fletes-server.up.railway.app/api/fletes"; // carga local de empresas via API
 let empresas = [];
 let resultadoSuma = 0;
 
